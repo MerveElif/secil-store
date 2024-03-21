@@ -1,38 +1,89 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Kartları yatay olarak sırala ve aralarında boşluk bırak */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern kart gölgesi */
+  transition: transform 0.3s ease; /* Geçiş efekti */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card:hover {
+  transform: scale(1.05); /* Üzerine gelince büyüme efekti */
+}
+
+.card-title {
+  font-size: 16px; /* Başlık fontunu büyüt */
+  color: black !important;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 14px; /* Yazı boyutunu küçültmek için */
+  color: black; /* Text rengini siyah yap */
+}
+
+.card-text.flex-grow-1 {
+  flex-grow: 1; /* Açıklama bölgesini genişlet */
+}
+
+.text-price {
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.text-products {
+  text-align: center;
+  padding: 50px;
+  text-transform: uppercase;
+}
+
+/* DetailPage.css */
+.detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center; /* Metin içeriğini de merkezi hizalama */
 }
 
-.App-link {
-  color: #61dafb;
+.detail-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-image {
+  width: 300px; /* Orta boyutta belirle */
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.detail-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.detail-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detail-rating {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.detail-features {
+  width: 100%;
 }
