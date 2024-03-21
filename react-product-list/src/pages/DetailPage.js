@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
-import { Rating } from "@mui/material"; // MUI'den Rating bileşenini ekleyin
+import { Rating } from "@mui/material";
 
 function DetailPage() {
   const { id } = useParams();
@@ -46,7 +46,6 @@ function DetailPage() {
                 <div className="detail-info">
                   <p className="detail-description">{product.description}</p>
                   <p className="detail-price">$ {product.price}</p>
-                  {/* Rating bileşenini kullanarak raiting bilgisini gösterin */}
                   <Rating
                     name="read-only"
                     value={product.rating.rate}

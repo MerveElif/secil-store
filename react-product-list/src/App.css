@@ -6,31 +6,31 @@
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Kartları yatay olarak sırala ve aralarında boşluk bırak */
+  justify-content: space-between;
 }
 
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern kart gölgesi */
-  transition: transform 0.3s ease; /* Geçiş efekti */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Üzerine gelince büyüme efekti */
+  transform: scale(1.05);
 }
 
 .card-title {
-  font-size: 16px; /* Başlık fontunu büyüt */
+  font-size: 16px;
   color: black !important;
   font-weight: 700;
 }
 
 .card-text {
-  font-size: 14px; /* Yazı boyutunu küçültmek için */
-  color: black; /* Text rengini siyah yap */
+  font-size: 14px;
+  color: black;
 }
 
 .card-text.flex-grow-1 {
-  flex-grow: 1; /* Açıklama bölgesini genişlet */
+  flex-grow: 1;
 }
 
 .text-price {
@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Metin içeriğini de merkezi hizalama */
+  text-align: center;
 }
 
 .detail-title {
@@ -62,7 +62,7 @@
 }
 
 .detail-image {
-  width: 300px; /* Orta boyutta belirle */
+  width: 300px;
   height: auto;
   margin-bottom: 30px;
 }

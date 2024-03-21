@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css"; // Global CSS dosyası
+import "../App.css";
 
 function ProductList({ products }) {
   return (
